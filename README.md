@@ -111,7 +111,7 @@ rm_flatness_nav/
 ├── setup.py
 └── motor_voltage_log.csv     # Recorded telemetry (Target: Tag 3)
 ```
-*(Update to match your actual files.)*
+
 
 ---
 
