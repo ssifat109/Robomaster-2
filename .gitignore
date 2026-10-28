@@ -1,0 +1,11 @@
+build/
+install/
+log/
+__pycache__/
+.pytest_cache/
+*.pyc
+data/
+evidence/
+output/
+tmp/
+rm_flatness_nav/config/hardware.yaml
