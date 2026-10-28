@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RoboMaster recording panel</title>
+<style>
+body{margin:0;background:#101820;color:#eef4fa;font:16px system-ui,sans-serif}main{max-width:1100px;margin:24px auto;padding:0 20px}h1{font-size:27px;margin-bottom:6px}.muted{color:#aebdcd}#camera{width:100%;min-height:220px;background:#000;border-radius:12px}.bar{display:flex;gap:14px;flex-wrap:wrap;margin:16px 0}.card{background:#1d2b38;padding:16px;border-radius:10px;flex:1;min-width:150px}.value{font-size:25px;font-weight:700;margin-top:7px}button{border:0;border-radius:8px;padding:14px 20px;font-weight:700;font-size:16px;cursor:pointer;background:#75d8b0;color:#092619}button:disabled{background:#586575;color:#abb7c5;cursor:not-allowed}.stop{background:#ea554f;color:white}#notice{padding:14px;background:#46391f;border-radius:8px;white-space:pre-line}#message{min-height:25px}pre{white-space:pre-wrap;max-height:220px;overflow:auto;background:#07111b;padding:12px;font-size:12px}code{overflow-wrap:anywhere}
+</style>
+<main>
+<h1>RoboMaster · Tag 3 mission</h1>
+<p class="muted">Live camera, mission controls and recording. The arm initializes to X=105 mm, Y=30 mm.</p>
+<img id="camera" alt="Waiting for the robot camera">
+<div class="bar"><div class="card">Robot state<div class="value" id="state">CONNECTING</div></div><div class="card">Detected tags<div class="value" id="ids">—</div></div><div class="card">Range<div class="value" id="range">—</div></div><div class="card">Front ToF<div class="value" id="tof">—</div></div></div>
+<div id="notice">Waiting for robot telemetry…</div>
+<div class="bar"><button onclick="act('connect')">Retry connection</button><button id="record" onclick="act('record')">Record camera · 45 s</button><button id="arm" disabled onclick="act('arm')">Start mission · 40 s max</button><button class="stop" onclick="act('stop')">STOP ROBOT</button></div>
+<p id="message"></p>
+<p id="motion" class="muted"></p>
+<p>For the submission video, film the robot with your phone: show the hidden-tag search, reveal Tag 3 off-center, then show the approach and measure the final standoff. The camera recording is supplementary evidence.</p>
+<p>Start is available only after distance calibration is verified and live checks pass. Keep the panel open during a run; the robot stops if its browser heartbeat is lost. Press <b>Escape</b> or <b>STOP ROBOT</b> to stop. Restart <b>start.bat</b> after a latched stop.</p>
+<p>Files: <code id="folder">—</code></p>
+<details><summary>Connection and startup log</summary><pre id="log"></pre></details>
+</main>
+<script>
+const token='__TOKEN__'; let busy=false;
+async function act(name){try{const r=await fetch('/api/'+name,{method:'POST',headers:{'X-Control-Token':token}});const s=await r.json();document.getElementById('message').textContent=s.message||s.error;}catch(e){document.getElementById('message').textContent='Connection lost. Check the launcher window.';}}
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){e.preventDefault();act('stop');}});
+async function update(){if(busy)return;busy=true;try{const r=await fetch('/api/status');const s=await r.json();document.getElementById('state').textContent=s.state;document.getElementById('ids').textContent=s.ids.length?s.ids.join(', '):'None';const p=s.candidate_pose;document.getElementById('range').textContent=p?(p.distance.toFixed(2)+' m'+(s.calibration_verified?'':' (unverified)')):'—';document.getElementById('tof').textContent=s.tof_m===null?'Unavailable':s.tof_m.toFixed(2)+' m';document.getElementById('notice').textContent=s.ready?'Ready. Start your phone recording, briefly hide the tag, then press Start mission.':s.reasons.join('\n');document.getElementById('arm').disabled=!s.ready||s.enabled;document.getElementById('record').disabled=s.recording||s.state==='OFFLINE'||s.state==='CONNECTING';document.getElementById('record').textContent=s.recording?'Recording '+s.recording_seconds+' / 45 s':'Record camera · 45 s';document.getElementById('motion').textContent='Forward '+s.vx.toFixed(3)+' m/s · Yaw '+s.wz.toFixed(3)+' rad/s · Model voltages '+s.model_voltages.map(v=>v.toFixed(3)).join(', ')+' V';document.getElementById('folder').textContent=s.output;document.getElementById('message').textContent=s.message;document.getElementById('camera').src='/frame.jpg?t='+Date.now();}catch(e){document.getElementById('state').textContent='CONNECTION LOST';document.getElementById('arm').disabled=true;}finally{busy=false;}}
+setInterval(update,400);update();setInterval(async()=>{try{const r=await fetch('/api/log');document.getElementById('log').textContent=(await r.json()).text;}catch(e){}},2500);
+</script></html>
