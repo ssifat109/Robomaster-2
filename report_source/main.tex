@@ -1,0 +1,94 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=23mm]{geometry}
+\usepackage{amsmath,amssymb,booktabs,longtable,graphicx,xcolor,hyperref,fancyhdr}
+\hypersetup{colorlinks=true,urlcolor=blue,linkcolor=blue}
+\pagestyle{fancy}\fancyhf{}\lhead{SCE 672: Assessment 2}\rhead{WSL implementation}\cfoot{\thepage}
+\setlength{\headheight}{14pt}
+\title{Differential Flatness Pursuit and\\Motor Voltage Dynamics}
+\author{Md. Shakib Al Sifat\\Student ID: 202613880\\King Fahd University of Petroleum \& Minerals}
+\date{28 October 2026}
+\begin{document}
+\maketitle
+\begin{center}\fcolorbox{orange}{yellow!10}{\parbox{0.91\linewidth}{\textbf{Evidence status.} Software results labelled SIMULATION are validation data from an ideal kinematic plant. Results labelled HARDWARE come from the physical RoboMaster EP. Model voltages are estimates from the assessment equation, not direct voltmeter measurements.}}
+\end{center}
+\section{Objective and implementation environment}
+The task is to search for AprilTag 3, align in place, follow a cubic trajectory, and stop at a nominal $0.20\,\mathrm{m}$ standoff. The implementation uses Ubuntu 24.04 in WSL 2, ROS 2 Jazzy, Python 3.12, NumPy, OpenCV, and the RoboMaster SDK. Windows connects directly to the robot's Wi-Fi access point. WSL uses mirrored networking; ROS nodes communicate locally in domain 42. A successful local simulation does not establish robot connectivity or physical stopping accuracy.
+
+The ROS package \texttt{rm\_flatness\_nav} contains a planner, an SDK driver, a voltage logger, and an ideal kinematic simulator. The driver starts with chassis motion disarmed, initializes the arm, receives ESC and ToF data, and decodes the camera stream. All internal motion calculations use metres, seconds, and radians, with body $x$ forward and positive yaw counterclockwise. SDK yaw commands are converted to clockwise degrees per second.
+
+\section{Visual acquisition and supervisory control}
+\subsection{Arm pose and camera geometry}
+The driver requests the adjusted camera pose $(X,Y)=(105,60)\,\mathrm{mm}$. Raising the second arm coordinate brought the floor tag into the camera view while the chassis remained stationary. The intended arm placement leaves the front ToF beam unobstructed. These coordinates alone do not prove optical pitch or beam clearance: the actual camera bracket, linkage geometry, and sensor location must be inspected on the robot. A stationary near/far ToF test and a camera image at this pose are required evidence.
+
+The printed marker is AprilTag family \texttt{36h11}, ID 3, with a measured $120\,\mathrm{mm}$ outer black square. Detection uses calibrated intrinsics and square pose estimation. Optical-frame coordinates are transformed to the chosen body reference using a measured rigid transform. The planar distance is $d=\sqrt{x_b^2+y_b^2}$, and bearing is $\theta_b=\operatorname{atan2}(y_b,x_b)$. Using optical-axis depth directly would be incorrect for a downward-facing camera. The precise chassis reference for standoff and its relationship to the front ToF origin are recorded during calibration.
+
+\paragraph{Stationary hardware preflight.} WSL mirrored networking selected the robot access-point route at \texttt{192.168.2.1}. The SDK delivered sensor callbacks and a valid H.264 camera stream. The original OpenCV background receiver could connect after the H.264 parameter sets and then stall; replacing it with the SDK incremental decoder restored bounded latest-frame capture. At the adjusted arm pose $(105,60)\,\mathrm{mm}$, the camera returned $1280\times720$ images and detected Tag 3 in 14/14 sampled frames. The front ToF subscription returned four zero slots with zero IDs and flags, indicating that no valid ToF module was registered. Camera range therefore remains the primary stopping guard; a valid ToF reading would still trigger the same priority stop.
+
+\subsection{Finite state machine}
+\begin{description}
+\item[SEARCHING:] With no fresh target observation for more than $0.45\,\mathrm{s}$, command $v=0$ and $\omega=\pm0.30\,\mathrm{rad/s}$ toward the last observed bearing. A default positive direction is used before the first observation.
+\item[ALIGNING:] With a visible target outside $|\theta_b|\leq0.18\,\mathrm{rad}$, rotate in place with bounded proportional bearing control. Aligning before translation reduces lateral drift and helps retain the tag in the camera view.
+\item[CHASING:] Solve the cubic at the aligned starting range and evaluate its analytical derivatives at $20\,\mathrm{Hz}$. Bounded bearing and range feedback compensate small tracking errors. Large bearing errors return to in-place alignment.
+\item[ARRIVED:] A fresh camera distance or valid front ToF distance at or below $0.20\,\mathrm{m}$ commands immediate zero translation and rotation. The stop is latched.
+\end{description}
+Sensor loss commands a stationary hold; missing commands trigger a driver watchdog. If the planned horizon expires without the standoff guard, the planner records \texttt{STOPPED\_SHORT}, not success. The SDK timeout is a host timer and is not an independent robot-side emergency stop. A person remains beside the robot during trials.
+
+The camera grab loop includes \texttt{time.sleep(0.010)} between iterations, drains the SDK decoder with the \texttt{newest} strategy, and retains one application frame. This follows the assessment's buffer-recycling guidance and avoids an unbounded application frame queue. Frame freshness is checked separately from tag visibility.
+
+\section{Differential flatness and the cubic solution}
+For flat output $z=(x,y)^T$, the unicycle model gives
+\begin{equation}
+ v=\sqrt{\dot{x}^2+\dot{y}^2},\qquad
+ \omega=\frac{\dot{x}\ddot{y}-\dot{y}\ddot{x}}{\dot{x}^2+\dot{y}^2}.
+\end{equation}
+At zero speed the angular expression is undefined. The implementation explicitly commands $(v,\omega)=(0,0)$ when the squared speed is below $10^{-12}$, rather than dividing by zero.
+
+For each axis $j\in\{x,y\}$, let $z_j(t)=a_{0j}+a_{1j}t+a_{2j}t^2+a_{3j}t^3$. The boundary system is
+\begin{equation}
+\begin{bmatrix}1&0&0&0\\0&1&0&0\\1&T&T^2&T^3\\0&1&2T&3T^2\end{bmatrix}
+\begin{bmatrix}a_{0j}\\a_{1j}\\a_{2j}\\a_{3j}\end{bmatrix}
+=\begin{bmatrix}z_j(0)\\\dot z_j(0)\\z_j(T)\\\dot z_j(T)\end{bmatrix}.
+\end{equation}
+The function \texttt{solve\_flat\_polynomial} calls \texttt{numpy.linalg.solve} on this matrix with both axes as right-hand-side columns. Set $D=d_0-0.20$, $v_0=0.06\,\mathrm{m/s}$, and
+\begin{equation}
+ T=\max\left(4.0,\frac{1.6D}{0.16}\right).
+\end{equation}
+The boundary values are $x(0)=0$, $\dot{x}(0)=v_0$, $x(T)=D$, $\dot{x}(T)=0$; all four $y$ boundary values are zero. Thus
+\begin{align}
+ a_{0x}&=0,&a_{1x}&=v_0,&
+ a_{2x}&=\frac{3D}{T^2}-\frac{2v_0}{T},&
+ a_{3x}&=-\frac{2D}{T^3}+\frac{v_0}{T^2},\\
+ \dot{x}(t)&=a_{1x}+2a_{2x}t+3a_{3x}t^2,&
+ \ddot{x}(t)&=2a_{2x}+6a_{3x}t.
+\end{align}
+All $y$ coefficients are zero, so nominal feedforward yaw is zero during the aligned straight pursuit. Nonzero chasing yaw comes from explicitly identified bearing feedback, not from an invented curved $y$ trajectory. For example, $d_0=1.65\,\mathrm{m}$ gives $D=1.45\,\mathrm{m}$ and $T=14.5\,\mathrm{s}$. The prescribed initial $0.06\,\mathrm{m/s}$ boundary produces a command step from stationary alignment; the cubic has a smooth terminal velocity but does not itself provide a zero-speed launch ramp.
+
+\section{Wheel rates and motor voltage model}
+For $r=0.05\,\mathrm{m}$ and $L_c=0.20\,\mathrm{m}$, wheel order is FR, FL, RL, RR:
+\begin{equation}
+ \omega_1=\omega_4=\frac{v_x+L_c\omega_z}{r},\qquad
+ \omega_2=\omega_3=\frac{v_x-L_c\omega_z}{r}.
+\end{equation}
+The assessment's model is
+\begin{equation}
+ V_i[k]=0.38\omega_i[k]+0.06\frac{\omega_i[k]-\omega_i[k-1]}{t_k-t_{k-1}}.
+\end{equation}
+These are model-based voltage estimates, not voltage-sensor measurements. The implemented primary series uses acknowledged chassis commands mapped through the prescribed wheel kinematics. Raw ESC speed telemetry is preserved for comparison, with its raw SDK ordering and polarity retained until physically checked. Sampling uses actual monotonic intervals. High-rate execution records preserve transients; a separate table is emitted approximately every second using actual timestamps.
+
+An abrupt stop can yield a nonzero negative acceleration term at the first zero-speed sample. Only subsequent stationary samples necessarily give $0.000\,\mathrm{V}$. For example, changing wheel rate from $2$ to $0\,\mathrm{rad/s}$ over $1\,\mathrm{s}$ yields $-0.12\,\mathrm{V}$, followed by zero for two successive stationary samples. The logger never overwrites this braking transient to force a zero result.
+
+\section{Validation and experimental results}
+\IfFileExists{validation.tex}{\input{validation.tex}}{Software validation is in progress.}
+\IfFileExists{experimental.tex}{\input{experimental.tex}}{\subsection{Hardware trial pending}
+No experimental Table 1 or execution plot is claimed yet. Required evidence includes the calibrated marker size and camera transform, measured starting distance, front ToF channel, the search, alignment and pursuit sequence, actual CSV, final physical standoff with measurement uncertainty, and a video link of at most 45 seconds. A ToF stop caused by an unrelated obstacle must not be reported as reaching Tag 3.}
+
+\section{Reproduction and evidence integrity}
+Build and test with \texttt{scripts/build\_test.sh} under WSL. Launch the simulator with \texttt{sim:=true}; launch hardware with \texttt{sim:=false} and the verified hardware configuration. Trial output directories are unique and CSV files are opened in exclusive-create mode. Simulation rows are marked \texttt{SIMULATION}; hardware rows are marked \texttt{HARDWARE}. The submission ZIP must contain the ROS package and the actual \texttt{motor\_voltage\_log.csv}. The assessment requires independent student code, hardware trials, and report drafting; this assisted preparation must be reviewed and used consistently with that requirement.
+
+\begin{thebibliography}{9}
+\bibitem{brief} A. I. Bhatti, \emph{SCE 672 Term Project Assessment 2: Differential Flatness Pursuit and Motor Voltage Dynamics}, KFUPM, supplied assessment brief, 2026.
+\bibitem{sdk} DJI, \emph{RoboMaster Developer Guide}, \url{https://robomaster-dev.readthedocs.io/en/latest/python_sdk/robomaster.html}.
+\bibitem{wsl} Microsoft, \emph{Accessing network applications with WSL}, \url{https://learn.microsoft.com/windows/wsl/networking}.
+\end{thebibliography}
+\end{document}
+

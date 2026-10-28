@@ -1,0 +1,18 @@
+\subsection{Hardware status and pending mission trial}
+The stationary hardware checks established robot connectivity, live camera transport, decoding, Tag 3 detection, and the adjusted arm pose $(105,60)\,\mathrm{mm}$ with the chassis held at zero. At that pose Tag 3 was detected in 14/14 sampled frames, with a median image centre of approximately $(636,203)$ pixels and a median black-square width of 147 pixels. A top-facing calibration candidate at a provisional 0.50 m bumper-to-tag distance gave 0.183 px reprojection RMS; the candidate remains unverified until an independent range check. The ToF interface returned invalid zero values on all channels. The marker must be checked independently at the $1.5$--$1.8\,\mathrm{m}$ start range before chassis arming.
+
+No physical pursuit result is claimed in this revision. Table~\ref{tab:voltage} and the execution plots will be generated from the unique final hardware run after calibration and the supervised low-speed safety test.
+
+\begin{longtable}{@{}rrrrrl@{}}
+\caption{Chassis motor armature voltage model log (hardware trial pending).}\label{tab:voltage}\\
+\toprule
+$t$ (s)&$V_1$ (V)&$V_2$ (V)&$V_3$ (V)&$V_4$ (V)&State\\\midrule
+\endfirsthead
+\toprule
+$t$ (s)&$V_1$ (V)&$V_2$ (V)&$V_3$ (V)&$V_4$ (V)&State\\\midrule
+\endhead
+--&--&--&--&--&Awaiting verified hardware run\\
+\bottomrule
+\end{longtable}
+
+\paragraph{Video link.} \url{https://youtube.com/ADD-FINAL-VIDEO-LINK}

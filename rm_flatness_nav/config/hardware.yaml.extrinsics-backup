@@ -1,0 +1,42 @@
+calibration_verified: false
+conn_type: ap
+local_ip: ''
+robot_ip: ''
+tag_family: DICT_APRILTAG_36h11
+tag_size_m: 0.04
+image_size:
+- 1280
+- 720
+camera_matrix:
+- 760.2821816125587
+- 0.0
+- 677.6492188199501
+- 0.0
+- 757.1076970180907
+- 384.975520554849
+- 0.0
+- 0.0
+- 1.0
+distortion:
+- 0.060404996807726756
+- -0.4532203796206379
+- -0.01137669210039904
+- 0.011259872937841493
+- 1.0743339229272373
+camera_to_body_rotation:
+- 0
+- 0
+- 1
+- -1
+- 0
+- 0
+- 0
+- -1
+- 0
+camera_to_body_translation_m:
+- 0
+- 0
+- 0
+max_reprojection_px: 2.0
+front_tof_index: 0
+intrinsic_rms_px: 0.5464099565859458

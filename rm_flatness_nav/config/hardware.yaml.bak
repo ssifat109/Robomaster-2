@@ -1,0 +1,16 @@
+# TEMPLATE ONLY. Measure and validate these values before enabling movement.
+calibration_verified: false
+conn_type: ap
+local_ip: ''
+robot_ip: ''
+tag_family: DICT_APRILTAG_36h11
+tag_size_m: 0.04
+image_size: [1280, 720]
+camera_matrix: [0, 0, 640, 0, 0, 360, 0, 0, 1]
+distortion: [0, 0, 0, 0, 0]
+# Optical (right, down, forward) -> body (forward, left, up), level camera example.
+# Must include actual downward pitch and measured camera position at arm (105,30).
+camera_to_body_rotation: [0, 0, 1, -1, 0, 0, 0, -1, 0]
+camera_to_body_translation_m: [0, 0, 0]
+max_reprojection_px: 2.0
+front_tof_index: 0
