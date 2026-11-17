@@ -14,6 +14,15 @@ from std_msgs.msg import String
 from std_srvs.srv import SetBool, Trigger
 from robomaster import robot, config
 from .vision import LatestVideo, TagDetector
+from .core import wheel_rates
+
+
+def send_chassis(ep, vx=0.0, wz=0.0):
+    rates = wheel_rates(vx, wz) * (60.0 / (2.0 * math.pi))
+    return ep.chassis.drive_wheels(w1=int(round(rates[0])),
+                                   w2=int(round(rates[1])),
+                                   w3=int(round(rates[2])),
+                                   w4=int(round(rates[3])), timeout=0.5)
 
 
 class Driver(Node):
@@ -61,7 +70,7 @@ class Driver(Node):
             if not self.ep.initialize(conn_type=self.cfg['conn_type']):
                 raise RuntimeError('SDK initialization failed')
             self.connected = True
-            self.ep.chassis.drive_speed(x=0, y=0, z=0)
+            send_chassis(self.ep)
             # Assessment's arm pose; verify mount and ToF clearance physically.
             action = self.ep.robotic_arm.moveto(
                 x=self.cfg.get('arm_x_mm', 105), y=self.cfg.get('arm_y_mm', 30))
@@ -144,14 +153,15 @@ class Driver(Node):
     def arm(self, request, response):
         if not request.data:
             self.armed = False
-            self.ep.chassis.drive_speed(x=0, y=0, z=0)
+            send_chassis(self.ep)
             response.success, response.message = True, 'Disarmed'
             return response
         healthy, _, _ = self.health(time.monotonic())
         seen_recently = (self.tag_data is not None and
                          0 <= time.monotonic()-self.tag_data['stamp'] < 10)
+        camera_only = bool(self.cfg.get('camera_only_mode', False))
         if (self.latched_stop or not healthy or not self.cfg['calibration_verified']
-                or not seen_recently):
+                or (not seen_recently and not camera_only)):
             response.success = False
             response.message = 'Requires verified calibration, live camera/ESC and Tag 3 seen within 10 seconds; stop must not be latched'
         else:
@@ -161,7 +171,7 @@ class Driver(Node):
 
     def stop_service(self, request, response):
         self.armed, self.latched_stop = False, True
-        self.ep.chassis.drive_speed(x=0, y=0, z=0)
+        send_chassis(self.ep)
         response.success, response.message = True, 'Stop latched; restart driver for another run'
         return response
 
@@ -195,8 +205,7 @@ class Driver(Node):
         c['wz'] = min(0.30, max(-0.30, c['wz']))
         # SDK z is clockwise degrees/s; ROS/body yaw is CCW radians/s.
         try:
-            acknowledged = bool(self.ep.chassis.drive_speed(
-                x=c['vx'], y=0, z=-math.degrees(c['wz']), timeout=0.25))
+            acknowledged = bool(send_chassis(self.ep, c['vx'], c['wz']))
         except Exception as exc:
             acknowledged = False
             self.get_logger().warning(f'Chassis command failed: {exc}')
@@ -213,7 +222,7 @@ class Driver(Node):
                 self.latched_stop = True
                 self.stop_state = 'SDK_ACK_LOST'
                 try:
-                    self.ep.chassis.drive_speed(x=0, y=0, z=0, timeout=0.25)
+                    send_chassis(self.ep)
                 except Exception as exc:
                     self.get_logger().error(f'Zero-speed fallback failed: {exc}')
             c['state'] = 'SDK_ACK_LOST' if moving_request else 'DISARMED_NO_ACK'
@@ -234,7 +243,7 @@ class Driver(Node):
         self.vision_stop.set()
         if self.connected:
             try:
-                self.ep.chassis.drive_speed(x=0, y=0, z=0)
+                send_chassis(self.ep)
             except Exception:
                 pass
         if hasattr(self, 'vision_thread'):

@@ -47,7 +47,7 @@ class Panel(Node):
         self.previous_rates = np.zeros(4)
         self.previous_stamp = None
         self.volts = [0.0]*4
-        self.message = 'Connecting to robot. Arm initializes to (105, 30) mm.'
+        self.message = 'Connecting to robot. Arm initializes to (105, 60) mm.'
         self.launch = None
         self.mutex = threading.RLock()
         self.arm_client = self.create_client(SetBool, '/rm/arm')
@@ -140,7 +140,7 @@ class Panel(Node):
                 ['ros2', 'launch', 'rm_flatness_nav', 'mission.launch.py', 'sim:=false',
                  'config_file:='+str(CONFIG), 'output_dir:='+str(self.folder)],
                 stdout=self.launch_log, stderr=subprocess.STDOUT, start_new_session=True)
-            self.message = 'Connecting to robot. Keep the arm clear for (105, 30) mm initialization.'
+            self.message = 'Connecting to robot. Keep the arm clear for (105, 60) mm initialization.'
             return dict(success=True, message=self.message)
 
     def service(self, client, request):

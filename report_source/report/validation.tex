@@ -1,0 +1,6 @@
+\subsection{Offline software validation}
+The package was built in a dedicated Ubuntu 24.04 WSL workspace against ROS 2 Jazzy. All 27 unit tests passed. The tests cover the cubic boundary solution, differential-flatness inversion, state transitions, range and ToF stop priority, voltage dynamics, AprilTag pose checks, driver arming gates, command acknowledgement failure, and expiry of stale ToF samples.
+
+A bounded ROS integration simulation exercised the complete node graph. It entered \texttt{SEARCHING}, \texttt{ALIGNING}, \texttt{CHASING}, and \texttt{ARRIVED}. The first arrival sample occurred at $t=16.750\,\mathrm{s}$ with simulated camera range $0.1998\,\mathrm{m}$. Peak forward command was $0.1373\,\mathrm{m/s}$, below the $0.16\,\mathrm{m/s}$ limit. Subsequent stationary model-voltage samples were zero. These results validate software integration only; the simulator does not model wheel slip, motor dynamics, latency, or camera calibration error.
+
+The execution logger now records the cubic position and velocity references, range-derived progress, SDK body velocity, and the associated tracking errors. Range-derived progress is not independent Cartesian odometry, so the report identifies its measurement basis wherever it is plotted.

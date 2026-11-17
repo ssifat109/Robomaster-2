@@ -6,7 +6,7 @@
 \setlength{\headheight}{14pt}
 \title{Differential Flatness Pursuit and\\Motor Voltage Dynamics}
 \author{Md. Shakib Al Sifat\\Student ID: 202613880\\King Fahd University of Petroleum \& Minerals}
-\date{28 October 2026}
+\date{18 November 2026}
 \begin{document}
 \maketitle
 \begin{center}\fcolorbox{orange}{yellow!10}{\parbox{0.91\linewidth}{\textbf{Evidence status.} Software results labelled SIMULATION are validation data from an ideal kinematic plant. Results labelled HARDWARE come from the physical RoboMaster EP. Model voltages are estimates from the assessment equation, not direct voltmeter measurements.}}
@@ -14,15 +14,15 @@
 \section{Objective and implementation environment}
 The task is to search for AprilTag 3, align in place, follow a cubic trajectory, and stop at a nominal $0.20\,\mathrm{m}$ standoff. The implementation uses Ubuntu 24.04 in WSL 2, ROS 2 Jazzy, Python 3.12, NumPy, OpenCV, and the RoboMaster SDK. Windows connects directly to the robot's Wi-Fi access point. WSL uses mirrored networking; ROS nodes communicate locally in domain 42. A successful local simulation does not establish robot connectivity or physical stopping accuracy.
 
-The ROS package \texttt{rm\_flatness\_nav} contains a planner, an SDK driver, a voltage logger, and an ideal kinematic simulator. The driver starts with chassis motion disarmed, initializes the arm, receives ESC and ToF data, and decodes the camera stream. All internal motion calculations use metres, seconds, and radians, with body $x$ forward and positive yaw counterclockwise. SDK yaw commands are converted to clockwise degrees per second.
+The ROS package \texttt{rm\_flatness\_nav} contains a planner, an SDK driver, a voltage logger, and an ideal kinematic simulator. The driver starts with chassis motion disarmed, initializes the arm, receives ESC and ToF data, and decodes the camera stream. All internal motion calculations use metres, seconds, and radians, with body $x$ forward and positive yaw counterclockwise. Body velocity and yaw commands are converted to wheel speeds before being sent to the RoboMaster SDK.
 
 \section{Visual acquisition and supervisory control}
 \subsection{Arm pose and camera geometry}
-The driver requests the adjusted camera pose $(X,Y)=(105,60)\,\mathrm{mm}$. Raising the second arm coordinate brought the floor tag into the camera view while the chassis remained stationary. The intended arm placement leaves the front ToF beam unobstructed. These coordinates alone do not prove optical pitch or beam clearance: the actual camera bracket, linkage geometry, and sensor location must be inspected on the robot. A stationary near/far ToF test and a camera image at this pose are required evidence.
+The tested camera pose was $(X,Y)=(105,80)\,\mathrm{mm}$. Raising the second arm coordinate moved Tag 3 lower in the image while the chassis remained stationary. The front ToF interface returned invalid zero readings, so no claim is made that the ToF channel was available during the runs.
 
-The printed marker is AprilTag family \texttt{36h11}, ID 3, with a measured $120\,\mathrm{mm}$ outer black square. Detection uses calibrated intrinsics and square pose estimation. Optical-frame coordinates are transformed to the chosen body reference using a measured rigid transform. The planar distance is $d=\sqrt{x_b^2+y_b^2}$, and bearing is $\theta_b=\operatorname{atan2}(y_b,x_b)$. Using optical-axis depth directly would be incorrect for a downward-facing camera. The precise chassis reference for standoff and its relationship to the front ToF origin are recorded during calibration.
+The printed marker is AprilTag family \texttt{36h11}, ID 3, with a measured $140\,\mathrm{mm}$ black square. Detection uses calibrated intrinsics and square pose estimation. Optical-frame coordinates are transformed to the selected body reference. The planar distance is $d=\sqrt{x_b^2+y_b^2}$, and bearing is $\theta_b=\operatorname{atan2}(y_b,x_b)$. The camera range is approximate and depends on tag size, pose, and body transform.
 
-\paragraph{Stationary hardware preflight.} WSL mirrored networking selected the robot access-point route at \texttt{192.168.2.1}. The SDK delivered sensor callbacks and a valid H.264 camera stream. The original OpenCV background receiver could connect after the H.264 parameter sets and then stall; replacing it with the SDK incremental decoder restored bounded latest-frame capture. At the adjusted arm pose $(105,60)\,\mathrm{mm}$, the camera returned $1280\times720$ images and detected Tag 3 in 14/14 sampled frames. The front ToF subscription returned four zero slots with zero IDs and flags, indicating that no valid ToF module was registered. Camera range therefore remains the primary stopping guard; a valid ToF reading would still trigger the same priority stop.
+\paragraph{Stationary hardware preflight.} WSL selected the robot access-point route at \texttt{192.168.2.1}. The camera returned $1280\times720$ images and detected Tags 1, 2, and 3. At the centered Tag 3 start pose, the camera estimated approximately $1.53\,\mathrm{m}$ for a manually measured $1.50\,\mathrm{m}$ distance. At a separate 1.00 m check, it estimated $0.989\,\mathrm{m}$. The front ToF callback returned four zero slots, so this project used the camera estimate as the stopping input.
 
 \subsection{Finite state machine}
 \begin{description}
@@ -83,7 +83,7 @@ An abrupt stop can yield a nonzero negative acceleration term at the first zero-
 No experimental Table 1 or execution plot is claimed yet. Required evidence includes the calibrated marker size and camera transform, measured starting distance, front ToF channel, the search, alignment and pursuit sequence, actual CSV, final physical standoff with measurement uncertainty, and a video link of at most 45 seconds. A ToF stop caused by an unrelated obstacle must not be reported as reaching Tag 3.}
 
 \section{Reproduction and evidence integrity}
-Build and test with \texttt{scripts/build\_test.sh} under WSL. Launch the simulator with \texttt{sim:=true}; launch hardware with \texttt{sim:=false} and the verified hardware configuration. Trial output directories are unique and CSV files are opened in exclusive-create mode. Simulation rows are marked \texttt{SIMULATION}; hardware rows are marked \texttt{HARDWARE}. The submission ZIP must contain the ROS package and the actual \texttt{motor\_voltage\_log.csv}. The assessment requires independent student code, hardware trials, and report drafting; this assisted preparation must be reviewed and used consistently with that requirement.
+Build and test with \texttt{scripts/build\_test.sh} under WSL. Launch the simulator with \texttt{sim:=true}; launch hardware with \texttt{sim:=false} and the hardware configuration. Trial output directories are unique and CSV files are opened in exclusive-create mode. Simulation rows are marked \texttt{SIMULATION}; hardware rows are marked \texttt{HARDWARE}. The submission folder includes the ROS package and actual motor voltage logs from the available hardware session. The assessment requires independent student code, hardware trials, and report drafting; review the final submission for course policy compliance.
 
 \begin{thebibliography}{9}
 \bibitem{brief} A. I. Bhatti, \emph{SCE 672 Term Project Assessment 2: Differential Flatness Pursuit and Motor Voltage Dynamics}, KFUPM, supplied assessment brief, 2026.

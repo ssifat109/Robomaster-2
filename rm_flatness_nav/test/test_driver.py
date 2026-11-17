@@ -42,6 +42,7 @@ def test_driver_initialization_gate_and_stop_do_not_wait_for_vision(tmp_path, mo
         def __init__(self):
             self.chassis = SimpleNamespace(
                 drive_speed=lambda **kw: commands.append(kw) or True,
+                    drive_wheels=lambda **kw: commands.append(kw) or True,
                 sub_esc=lambda freq, callback: callback([0]*4) or True,
                 sub_velocity=lambda freq, callback: callback([0]*6) or True,
                 unsub_esc=lambda: None, unsub_velocity=lambda: None)
@@ -80,10 +81,10 @@ def test_driver_initialization_gate_and_stop_do_not_wait_for_vision(tmp_path, mo
         started = time.monotonic()
         node.tick()
         assert time.monotonic()-started < .2
-        assert commands[-1]['x'] == 0
+        assert all(commands[-1][f'w{i}'] == 0 for i in range(1, 5))
         response = node.stop_service(Trigger.Request(), Trigger.Response())
         assert response.success and node.latched_stop and not node.armed
-        assert all(c['x'] == c['y'] == c['z'] == 0 for c in commands)
+        assert all(all(c[f'w{i}'] == 0 for i in range(1, 5)) for c in commands)
     finally:
         release.set()
         if node is not None:
@@ -118,6 +119,7 @@ def test_driver_survives_missing_zero_command_ack_and_inhibits_arm(tmp_path, mon
         def __init__(self):
             self.chassis = SimpleNamespace(
                 drive_speed=lambda **kw: False,
+                    drive_wheels=lambda **kw: False,
                 sub_esc=lambda freq, callback: callback([0]*4) or True,
                 sub_velocity=lambda freq, callback: callback([0]*6) or True,
                 unsub_esc=lambda: None, unsub_velocity=lambda: None)

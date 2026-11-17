@@ -1,0 +1,15 @@
+{
+  "source": "HARDWARE",
+  "samples": 3816,
+  "tracking_position_basis": "initial tag range minus current tag range; not independent Cartesian odometry",
+  "range_tracking_error_m": {
+    "samples": 0,
+    "rmse": null,
+    "max_abs": null
+  },
+  "velocity_tracking_error_mps": {
+    "samples": 0,
+    "rmse": null,
+    "max_abs": null
+  }
+}

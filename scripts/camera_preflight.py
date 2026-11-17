@@ -10,6 +10,8 @@ from rm_flatness_nav.vision import LatestVideo
 
 p = argparse.ArgumentParser(description=__doc__)
 p.add_argument('--setup-arm', action='store_true')
+p.add_argument('--arm-x', type=int, default=105)
+p.add_argument('--arm-y', type=int, default=30)
 p.add_argument('--duration', type=float, default=6)
 a = p.parse_args()
 out = Path('/mnt/d/RB 2/evidence') / ('arm_preflight' if a.setup_arm else 'camera_preflight')
@@ -25,8 +27,8 @@ try:
         raise RuntimeError('SDK connection failed')
     if a.setup_arm:
         ep.chassis.drive_speed(x=0, y=0, z=0)
-        print('Moving arm to X=105 mm, Y=30 mm; chassis commanded zero.', flush=True)
-        action = ep.robotic_arm.moveto(x=105, y=30)
+        print(f'Moving arm to X={a.arm_x} mm, Y={a.arm_y} mm; chassis commanded zero.', flush=True)
+        action = ep.robotic_arm.moveto(x=a.arm_x, y=a.arm_y)
         if not action.wait_for_completed(timeout=10):
             raise RuntimeError('Arm action did not complete')
         print('Arm action completed.', flush=True)

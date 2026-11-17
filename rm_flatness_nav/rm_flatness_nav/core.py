@@ -55,7 +55,7 @@ class Observation:
 
 
 class Supervisor:
-    def __init__(self):
+    def __init__(self, initial_sweep_s=0.0):
         self.state = 'SEARCHING'
         self.last_direction = 1.0
         self.start = None
@@ -63,6 +63,8 @@ class Supervisor:
         self.coefficients = None
         self.T = None
         self.reason = ''
+        self.initial_sweep_s = max(0.0, float(initial_sweep_s))
+        self.sweep_start = None
 
     def step(self, now, tag, tof=None, healthy=True):
         if self.state in ('ARRIVED', 'STOPPED_SHORT'):
@@ -77,6 +79,15 @@ class Supervisor:
         if not healthy:
             self.state, self.start = 'SENSOR_HOLD', None
             return 0.0, 0.0
+        if self.initial_sweep_s > 0.0:
+            if self.sweep_start is None:
+                self.sweep_start = now
+            if now - self.sweep_start < self.initial_sweep_s:
+                self.state = 'SEARCHING'
+                self.reason = 'initial_360_sweep'
+                return 0.0, 0.30
+            self.initial_sweep_s = 0.0
+            self.reason = 'initial_360_sweep_complete'
         if not fresh:
             self.state, self.start = 'SEARCHING', None
             return 0.0, 0.30*self.last_direction

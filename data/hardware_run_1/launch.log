@@ -1,0 +1,701 @@
+[INFO] [launch]: All log files can be found below /home/shakib_al_sifat/.ros/log/2026-11-18-00-53-38-356899-ASUS-ROG-673
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [logger-1]: process started with pid [685]
+[INFO] [planner-2]: process started with pid [686]
+[INFO] [driver-3]: process started with pid [687]
+[driver-3] [INFO] [1794952424.318246420] [robomaster_driver]: Connected, arm at (105,30), CHASSIS DISARMED.
+[logger-1] [INFO] [1794952424.409855947] [motor_voltage_logger]:   0.00s |    0.000    0.000    0.000    0.000 V | DISARMED | HARDWARE
+[logger-1] [INFO] [1794952425.393128490] [motor_voltage_logger]:   1.04s |    0.000    0.000    0.000    0.000 V | DISARMED | HARDWARE
+[logger-1] [INFO] [1794952426.394744415] [motor_voltage_logger]:   2.04s |    0.000    0.000    0.000    0.000 V | DISARMED | HARDWARE
+[logger-1] [INFO] [1794952427.394279682] [motor_voltage_logger]:   3.04s |    0.000    0.000    0.000    0.000 V | DISARMED | HARDWARE
+[logger-1] [INFO] [1794952428.392561915] [motor_voltage_logger]:   4.03s |    0.000    0.000    0.000    0.000 V | DISARMED | HARDWARE
+[logger-1] [INFO] [1794952429.395309300] [motor_voltage_logger]:   5.03s |    0.000    0.000    0.000    0.000 V | DISARMED | HARDWARE
+[logger-1] [INFO] [1794952430.403966778] [motor_voltage_logger]:   6.04s |    0.000    0.000    0.000    0.000 V | DISARMED | HARDWARE
+[logger-1] [INFO] [1794952431.398821189] [motor_voltage_logger]:   7.04s |    0.000    0.000    0.000    0.000 V | DISARMED | HARDWARE
+[logger-1] [INFO] [1794952432.388338620] [motor_voltage_logger]:   8.02s |    0.000    0.000    0.000    0.000 V | DISARMED | HARDWARE
+[logger-1] [INFO] [1794952433.382769934] [motor_voltage_logger]:   9.03s |    0.000    0.000    0.000    0.000 V | DISARMED | HARDWARE
+[logger-1] [INFO] [1794952434.424907445] [motor_voltage_logger]:  10.03s |    0.000    0.000    0.000    0.000 V | DISARMED | HARDWARE
+[logger-1] [INFO] [1794952435.397790324] [motor_voltage_logger]:  11.04s |    0.000    0.000    0.000    0.000 V | DISARMED | HARDWARE
+[logger-1] [INFO] [1794952436.382265168] [motor_voltage_logger]:  12.03s |    0.000    0.000    0.000    0.000 V | DISARMED | HARDWARE
+[logger-1] [INFO] [1794952437.394069832] [motor_voltage_logger]:  13.03s |    0.000    0.000    0.000    0.000 V | DISARMED | HARDWARE
+[logger-1] [INFO] [1794952438.397494051] [motor_voltage_logger]:  14.04s |    0.000    0.000    0.000    0.000 V | DISARMED | HARDWARE
+[logger-1] [INFO] [1794952439.373923036] [motor_voltage_logger]:  15.02s |    0.000    0.000    0.000    0.000 V | DISARMED | HARDWARE
+[logger-1] [INFO] [1794952440.385532628] [motor_voltage_logger]:  16.03s |    0.000    0.000    0.000    0.000 V | DISARMED | HARDWARE
+[logger-1] [INFO] [1794952441.381649361] [motor_voltage_logger]:  17.02s |    0.000    0.000    0.000    0.000 V | DISARMED | HARDWARE
+[logger-1] [INFO] [1794952442.383164345] [motor_voltage_logger]:  18.03s |    0.000    0.000    0.000    0.000 V | DISARMED | HARDWARE
+[logger-1] [INFO] [1794952443.379588703] [motor_voltage_logger]:  19.02s |    0.000    0.000    0.000    0.000 V | DISARMED | HARDWARE
+[logger-1] [INFO] [1794952444.376497003] [motor_voltage_logger]:  20.02s |    0.000    0.000    0.000    0.000 V | DISARMED | HARDWARE
+[logger-1] [INFO] [1794952445.400496903] [motor_voltage_logger]:  21.04s |    0.000    0.000    0.000    0.000 V | DISARMED | HARDWARE
+[logger-1] [INFO] [1794952446.394289503] [motor_voltage_logger]:  22.04s |    0.000    0.000    0.000    0.000 V | DISARMED | HARDWARE
+[logger-1] [INFO] [1794952447.380418980] [motor_voltage_logger]:  23.02s |    0.000    0.000    0.000    0.000 V | DISARMED | HARDWARE
+[logger-1] [INFO] [1794952448.396861060] [motor_voltage_logger]:  24.04s |    0.000    0.000    0.000    0.000 V | DISARMED | HARDWARE
+[logger-1] [INFO] [1794952449.384176905] [motor_voltage_logger]:  25.02s |    0.000    0.000    0.000    0.000 V | DISARMED | HARDWARE
+[logger-1] [INFO] [1794952450.442431310] [motor_voltage_logger]:  26.04s |    0.000    0.000    0.000    0.000 V | DISARMED | HARDWARE
+[logger-1] [INFO] [1794952451.411263598] [motor_voltage_logger]:  27.04s |    0.000    0.000    0.000    0.000 V | DISARMED | HARDWARE
+[logger-1] [INFO] [1794952452.392907657] [motor_voltage_logger]:  28.03s |    0.000    0.000    0.000    0.000 V | DISARMED | HARDWARE
+[logger-1] [INFO] [1794952454.094792884] [motor_voltage_logger]:  29.02s |    0.000    0.000    0.000    0.000 V | DISARMED | HARDWARE
+[logger-1] [INFO] [1794952455.088300247] [motor_voltage_logger]:  30.01s |    0.000    0.000    0.000    0.000 V | DISARMED | HARDWARE
+[logger-1] [INFO] [1794952456.085000820] [motor_voltage_logger]:  31.01s |    0.000    0.000    0.000    0.000 V | DISARMED | HARDWARE
+[logger-1] [INFO] [1794952457.135097369] [motor_voltage_logger]:  32.06s |    0.000    0.000    0.000    0.000 V | DISARMED | HARDWARE
+[logger-1] [INFO] [1794952458.081423561] [motor_voltage_logger]:  33.01s |    0.000    0.000    0.000    0.000 V | DISARMED | HARDWARE
+[logger-1] [INFO] [1794952459.076042957] [motor_voltage_logger]:  34.00s |    0.000    0.000    0.000    0.000 V | DISARMED | HARDWARE
+[logger-1] [INFO] [1794952460.083825912] [motor_voltage_logger]:  35.01s |    0.599    0.594    0.594    0.599 V | CHASING | HARDWARE
+[logger-1] [INFO] [1794952461.095418054] [motor_voltage_logger]:  36.02s |    0.788    0.770    0.770    0.788 V | CHASING | HARDWARE
+[logger-1] [INFO] [1794952462.107400302] [motor_voltage_logger]:  37.01s |    0.887    0.880    0.880    0.887 V | CHASING | HARDWARE
+[logger-1] [INFO] [1794952463.090052002] [motor_voltage_logger]:  38.01s |    1.015    1.001    1.001    1.015 V | CHASING | HARDWARE
+[logger-1] [INFO] [1794952464.090083350] [motor_voltage_logger]:  39.01s |    0.988    0.981    0.981    0.988 V | CHASING | HARDWARE
+[logger-1] [INFO] [1794952465.091925013] [motor_voltage_logger]:  40.01s |    0.952    0.928    0.928    0.952 V | CHASING | HARDWARE
+[logger-1] [INFO] [1794952466.092806247] [motor_voltage_logger]:  41.01s |    0.953    0.918    0.918    0.953 V | CHASING | HARDWARE
+[logger-1] [INFO] [1794952467.082796562] [motor_voltage_logger]:  42.01s |    0.914    0.911    0.911    0.914 V | CHASING | HARDWARE
+[logger-1] [INFO] [1794952468.082017022] [motor_voltage_logger]:  43.00s |    0.907    0.887    0.887    0.907 V | CHASING | HARDWARE
+[logger-1] [INFO] [1794952469.089495972] [motor_voltage_logger]:  44.00s |    0.761    0.746    0.746    0.761 V | CHASING | HARDWARE
+[logger-1] [INFO] [1794952470.099789894] [motor_voltage_logger]:  45.01s |    0.614    0.596    0.596    0.614 V | CHASING | HARDWARE
+[logger-1] [INFO] [1794952471.086341994] [motor_voltage_logger]:  46.01s |    0.423    0.385    0.385    0.423 V | CHASING | HARDWARE
+[logger-1] [INFO] [1794952472.082565294] [motor_voltage_logger]:  47.01s |    0.330    0.310    0.310    0.330 V | CHASING | HARDWARE
+[logger-1] [INFO] [1794952473.079707624] [motor_voltage_logger]:  48.00s |    0.147    0.122    0.122    0.147 V | CHASING | HARDWARE
+[logger-1] [INFO] [1794952474.109976615] [motor_voltage_logger]:  49.01s |    0.000    0.000    0.000    0.000 V | STOPPED_SHORT | HARDWARE
+[logger-1] [INFO] [1794952475.083897777] [motor_voltage_logger]:  50.01s |    0.000    0.000    0.000    0.000 V | STOPPED_SHORT | HARDWARE
+[logger-1] [INFO] [1794952476.094597480] [motor_voltage_logger]:  51.02s |    0.000    0.000    0.000    0.000 V | STOPPED_SHORT | HARDWARE
+[logger-1] [INFO] [1794952477.113287956] [motor_voltage_logger]:  52.01s |    0.000    0.000    0.000    0.000 V | STOPPED_SHORT | HARDWARE
+[logger-1] [INFO] [1794952478.085201314] [motor_voltage_logger]:  53.00s |    0.000    0.000    0.000    0.000 V | STOPPED_SHORT | HARDWARE
+[logger-1] [INFO] [1794952479.102014785] [motor_voltage_logger]:  54.01s |    0.000    0.000    0.000    0.000 V | STOPPED_SHORT | HARDWARE
+[logger-1] [INFO] [1794952480.086480685] [motor_voltage_logger]:  55.01s |    0.000    0.000    0.000    0.000 V | STOPPED_SHORT | HARDWARE
+[logger-1] [INFO] [1794952481.087802659] [motor_voltage_logger]:  56.01s |    0.000    0.000    0.000    0.000 V | STOPPED_SHORT | HARDWARE
+[logger-1] [INFO] [1794952482.089322434] [motor_voltage_logger]:  57.01s |    0.000    0.000    0.000    0.000 V | STOPPED_SHORT | HARDWARE
+[logger-1] [INFO] [1794952483.091239556] [motor_voltage_logger]:  58.02s |    0.000    0.000    0.000    0.000 V | STOPPED_SHORT | HARDWARE
+[logger-1] [INFO] [1794952484.097669052] [motor_voltage_logger]:  59.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952485.099104312] [motor_voltage_logger]:  60.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952486.085305084] [motor_voltage_logger]:  61.00s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952487.898370117] [motor_voltage_logger]:  62.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952488.913755715] [motor_voltage_logger]:  63.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952489.919046795] [motor_voltage_logger]:  64.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952490.902781514] [motor_voltage_logger]:  65.04s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952491.916758714] [motor_voltage_logger]:  66.04s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952492.901070981] [motor_voltage_logger]:  67.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952493.902781883] [motor_voltage_logger]:  68.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952494.889736588] [motor_voltage_logger]:  69.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952495.882390726] [motor_voltage_logger]:  70.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952496.882855826] [motor_voltage_logger]:  71.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952497.882367844] [motor_voltage_logger]:  72.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952498.884625812] [motor_voltage_logger]:  73.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952499.900784378] [motor_voltage_logger]:  74.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952500.897416174] [motor_voltage_logger]:  75.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952501.918229738] [motor_voltage_logger]:  76.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952502.877665406] [motor_voltage_logger]:  77.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952503.924559006] [motor_voltage_logger]:  78.04s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952504.879695106] [motor_voltage_logger]:  79.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952505.880636804] [motor_voltage_logger]:  80.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952506.900192697] [motor_voltage_logger]:  81.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952507.898484675] [motor_voltage_logger]:  82.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952508.897776619] [motor_voltage_logger]:  83.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952509.916501200] [motor_voltage_logger]:  84.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952510.897748500] [motor_voltage_logger]:  85.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952511.899082100] [motor_voltage_logger]:  86.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952512.894906900] [motor_voltage_logger]:  87.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952513.890965992] [motor_voltage_logger]:  88.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952514.897977045] [motor_voltage_logger]:  89.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952515.900037928] [motor_voltage_logger]:  90.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952516.882466452] [motor_voltage_logger]:  91.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952517.882533064] [motor_voltage_logger]:  92.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952518.902921960] [motor_voltage_logger]:  93.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952520.696276066] [motor_voltage_logger]:  94.04s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952521.699765696] [motor_voltage_logger]:  95.04s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952522.687072296] [motor_voltage_logger]:  96.04s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952523.690330473] [motor_voltage_logger]:  97.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952524.678322711] [motor_voltage_logger]:  98.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952525.700562559] [motor_voltage_logger]:  99.04s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952526.693640359] [motor_voltage_logger]: 100.04s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952527.697370259] [motor_voltage_logger]: 101.04s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952528.701532359] [motor_voltage_logger]: 102.04s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952529.690263759] [motor_voltage_logger]: 103.04s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952530.685479255] [motor_voltage_logger]: 104.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952531.682566611] [motor_voltage_logger]: 105.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952532.693898808] [motor_voltage_logger]: 106.04s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952533.681519765] [motor_voltage_logger]: 107.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952534.684636965] [motor_voltage_logger]: 108.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952535.694646465] [motor_voltage_logger]: 109.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952536.682962865] [motor_voltage_logger]: 110.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952537.686201251] [motor_voltage_logger]: 111.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952538.696709570] [motor_voltage_logger]: 112.04s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952539.701768904] [motor_voltage_logger]: 113.04s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952540.683753391] [motor_voltage_logger]: 114.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952541.681761328] [motor_voltage_logger]: 115.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952542.680672579] [motor_voltage_logger]: 116.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952543.675887479] [motor_voltage_logger]: 117.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952544.757321079] [motor_voltage_logger]: 118.04s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952545.718150336] [motor_voltage_logger]: 119.04s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952546.719864464] [motor_voltage_logger]: 120.05s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952547.702225531] [motor_voltage_logger]: 121.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952548.700535691] [motor_voltage_logger]: 122.04s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952549.693863554] [motor_voltage_logger]: 123.04s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952550.697068574] [motor_voltage_logger]: 124.05s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952551.691977528] [motor_voltage_logger]: 125.04s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952553.543160302] [motor_voltage_logger]: 126.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952554.541315161] [motor_voltage_logger]: 127.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952555.530675888] [motor_voltage_logger]: 128.01s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952556.542149533] [motor_voltage_logger]: 129.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952557.531085298] [motor_voltage_logger]: 130.01s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952558.544274134] [motor_voltage_logger]: 131.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952559.542524406] [motor_voltage_logger]: 132.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952560.537765706] [motor_voltage_logger]: 133.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952561.537170906] [motor_voltage_logger]: 134.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952562.535624553] [motor_voltage_logger]: 135.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952563.523640242] [motor_voltage_logger]: 136.01s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952564.548871040] [motor_voltage_logger]: 137.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952565.534176906] [motor_voltage_logger]: 138.01s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952566.543389709] [motor_voltage_logger]: 139.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952567.529861009] [motor_voltage_logger]: 140.00s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952568.551390910] [motor_voltage_logger]: 141.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952569.575414210] [motor_voltage_logger]: 142.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952570.571513900] [motor_voltage_logger]: 143.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952571.547261547] [motor_voltage_logger]: 144.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952572.567979419] [motor_voltage_logger]: 145.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952573.554654076] [motor_voltage_logger]: 146.01s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952574.539906823] [motor_voltage_logger]: 147.01s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952575.555662423] [motor_voltage_logger]: 148.01s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952576.560604223] [motor_voltage_logger]: 149.01s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952577.538408424] [motor_voltage_logger]: 150.01s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952578.537590824] [motor_voltage_logger]: 151.01s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952579.539112863] [motor_voltage_logger]: 152.01s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952580.536983707] [motor_voltage_logger]: 153.01s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952581.529729930] [motor_voltage_logger]: 154.01s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952582.530864419] [motor_voltage_logger]: 155.01s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952583.546160130] [motor_voltage_logger]: 156.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952584.545883130] [motor_voltage_logger]: 157.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952586.352599346] [motor_voltage_logger]: 158.00s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952587.394669389] [motor_voltage_logger]: 159.05s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952588.379011036] [motor_voltage_logger]: 160.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952589.383709952] [motor_voltage_logger]: 161.04s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952590.391309769] [motor_voltage_logger]: 162.05s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952591.354065150] [motor_voltage_logger]: 163.00s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952592.387252950] [motor_voltage_logger]: 164.04s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952593.394347750] [motor_voltage_logger]: 165.04s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952594.392894150] [motor_voltage_logger]: 166.04s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952595.396440106] [motor_voltage_logger]: 167.04s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952596.383161993] [motor_voltage_logger]: 168.04s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952597.399229660] [motor_voltage_logger]: 169.04s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952598.389505006] [motor_voltage_logger]: 170.04s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952599.369992768] [motor_voltage_logger]: 171.01s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952600.417732769] [motor_voltage_logger]: 172.05s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952601.398664469] [motor_voltage_logger]: 173.05s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952602.403498569] [motor_voltage_logger]: 174.05s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952603.406780788] [motor_voltage_logger]: 175.05s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952604.361976886] [motor_voltage_logger]: 176.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952605.404041957] [motor_voltage_logger]: 177.04s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952606.700082921] [motor_voltage_logger]: 178.04s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952607.701298507] [motor_voltage_logger]: 179.05s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952608.418152007] [motor_voltage_logger]: 180.05s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952609.586063107] [motor_voltage_logger]: 181.05s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952610.405042807] [motor_voltage_logger]: 182.05s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952611.418895622] [motor_voltage_logger]: 183.05s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952612.390522964] [motor_voltage_logger]: 184.04s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952613.343667797] [motor_voltage_logger]: 185.00s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952614.398805353] [motor_voltage_logger]: 186.05s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952615.382228840] [motor_voltage_logger]: 187.04s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952616.380873040] [motor_voltage_logger]: 188.04s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952617.415112040] [motor_voltage_logger]: 189.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952618.413642540] [motor_voltage_logger]: 190.05s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952620.213761847] [motor_voltage_logger]: 191.05s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952621.200191387] [motor_voltage_logger]: 192.04s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952622.230905505] [motor_voltage_logger]: 193.05s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952623.159187967] [motor_voltage_logger]: 194.00s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952624.180682532] [motor_voltage_logger]: 195.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952625.148828732] [motor_voltage_logger]: 196.00s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952626.206960232] [motor_voltage_logger]: 197.05s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952627.178239032] [motor_voltage_logger]: 198.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952628.191735432] [motor_voltage_logger]: 199.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952629.206267189] [motor_voltage_logger]: 200.05s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952630.187372897] [motor_voltage_logger]: 201.04s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952631.198336883] [motor_voltage_logger]: 202.05s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952632.203159809] [motor_voltage_logger]: 203.05s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952633.201872910] [motor_voltage_logger]: 204.06s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952634.199627410] [motor_voltage_logger]: 205.05s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952635.197824311] [motor_voltage_logger]: 206.05s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952636.180745611] [motor_voltage_logger]: 207.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952637.182638119] [motor_voltage_logger]: 208.04s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952638.189729305] [motor_voltage_logger]: 209.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952639.206892252] [motor_voltage_logger]: 210.05s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952640.194267477] [motor_voltage_logger]: 211.05s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952641.187017677] [motor_voltage_logger]: 212.05s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952642.192021277] [motor_voltage_logger]: 213.05s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952643.191211577] [motor_voltage_logger]: 214.05s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952644.220984977] [motor_voltage_logger]: 215.05s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952645.199078342] [motor_voltage_logger]: 216.04s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952646.176484068] [motor_voltage_logger]: 217.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952647.188124604] [motor_voltage_logger]: 218.04s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952648.195940052] [motor_voltage_logger]: 219.05s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952649.196501652] [motor_voltage_logger]: 220.05s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952650.203288352] [motor_voltage_logger]: 221.05s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952651.197096252] [motor_voltage_logger]: 222.05s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952653.025333755] [motor_voltage_logger]: 223.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952654.019624042] [motor_voltage_logger]: 224.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952655.019274369] [motor_voltage_logger]: 225.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952655.990742086] [motor_voltage_logger]: 226.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952656.992575072] [motor_voltage_logger]: 227.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952657.991738751] [motor_voltage_logger]: 228.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952658.977004351] [motor_voltage_logger]: 229.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952659.993202552] [motor_voltage_logger]: 230.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952661.021477852] [motor_voltage_logger]: 231.04s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952661.975450647] [motor_voltage_logger]: 232.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952662.987253204] [motor_voltage_logger]: 233.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952664.004817272] [motor_voltage_logger]: 234.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952665.025870673] [motor_voltage_logger]: 235.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952666.024631773] [motor_voltage_logger]: 236.04s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952666.984686774] [motor_voltage_logger]: 237.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952667.981783275] [motor_voltage_logger]: 238.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952668.996414676] [motor_voltage_logger]: 239.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952670.019990829] [motor_voltage_logger]: 240.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952670.983644851] [motor_voltage_logger]: 241.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952672.002236508] [motor_voltage_logger]: 242.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952672.981272009] [motor_voltage_logger]: 243.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952673.993582809] [motor_voltage_logger]: 244.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952674.996283909] [motor_voltage_logger]: 245.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952675.987792610] [motor_voltage_logger]: 246.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952676.986031110] [motor_voltage_logger]: 247.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952677.995322608] [motor_voltage_logger]: 248.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952678.979293015] [motor_voltage_logger]: 249.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952680.003152418] [motor_voltage_logger]: 250.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952681.016464824] [motor_voltage_logger]: 251.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952681.982908624] [motor_voltage_logger]: 252.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952682.998164024] [motor_voltage_logger]: 253.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952683.984373324] [motor_voltage_logger]: 254.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952685.792757938] [motor_voltage_logger]: 255.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952686.800168557] [motor_voltage_logger]: 256.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952687.813464565] [motor_voltage_logger]: 257.05s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952688.779038652] [motor_voltage_logger]: 258.01s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952689.793753069] [motor_voltage_logger]: 259.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952690.801827294] [motor_voltage_logger]: 260.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952691.791591094] [motor_voltage_logger]: 261.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952692.815239694] [motor_voltage_logger]: 262.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952693.823426894] [motor_voltage_logger]: 263.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952694.797383894] [motor_voltage_logger]: 264.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952695.782342136] [motor_voltage_logger]: 265.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952696.813106370] [motor_voltage_logger]: 266.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952697.784493471] [motor_voltage_logger]: 267.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952698.792735373] [motor_voltage_logger]: 268.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952699.799026674] [motor_voltage_logger]: 269.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952700.794896876] [motor_voltage_logger]: 270.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952701.805165377] [motor_voltage_logger]: 271.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952702.789929256] [motor_voltage_logger]: 272.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952703.788659616] [motor_voltage_logger]: 273.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952704.794817726] [motor_voltage_logger]: 274.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952705.778655977] [motor_voltage_logger]: 275.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952706.787655724] [motor_voltage_logger]: 276.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952707.797417537] [motor_voltage_logger]: 277.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952708.791485828] [motor_voltage_logger]: 278.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952709.787590400] [motor_voltage_logger]: 279.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952710.783938098] [motor_voltage_logger]: 280.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952711.786627178] [motor_voltage_logger]: 281.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952712.780882030] [motor_voltage_logger]: 282.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952713.795104364] [motor_voltage_logger]: 283.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952714.823422798] [motor_voltage_logger]: 284.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952715.787050221] [motor_voltage_logger]: 285.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952716.796774990] [motor_voltage_logger]: 286.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952718.804022249] [motor_voltage_logger]: 287.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952719.806278759] [motor_voltage_logger]: 288.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952720.805434108] [motor_voltage_logger]: 289.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952721.819423635] [motor_voltage_logger]: 290.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952722.792305072] [motor_voltage_logger]: 291.01s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952723.818446980] [motor_voltage_logger]: 292.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952724.814132991] [motor_voltage_logger]: 293.01s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952725.792198055] [motor_voltage_logger]: 294.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952726.810340985] [motor_voltage_logger]: 295.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952727.795470415] [motor_voltage_logger]: 296.01s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952728.798433184] [motor_voltage_logger]: 297.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952729.813072838] [motor_voltage_logger]: 298.04s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952730.778731427] [motor_voltage_logger]: 299.01s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952731.799957109] [motor_voltage_logger]: 300.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952732.791804805] [motor_voltage_logger]: 301.01s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952733.784887996] [motor_voltage_logger]: 302.01s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952734.814317758] [motor_voltage_logger]: 303.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952735.796053492] [motor_voltage_logger]: 304.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952736.798579465] [motor_voltage_logger]: 305.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952737.784239353] [motor_voltage_logger]: 306.01s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952738.774668149] [motor_voltage_logger]: 307.01s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952739.792304927] [motor_voltage_logger]: 308.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952740.790286484] [motor_voltage_logger]: 309.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952741.787010135] [motor_voltage_logger]: 310.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952742.788178270] [motor_voltage_logger]: 311.01s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952743.779168711] [motor_voltage_logger]: 312.01s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952744.807018659] [motor_voltage_logger]: 313.03s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952745.786699328] [motor_voltage_logger]: 314.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952746.783589532] [motor_voltage_logger]: 315.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952747.793329555] [motor_voltage_logger]: 316.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952748.893715459] [motor_voltage_logger]: 317.01s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952749.796794602] [motor_voltage_logger]: 318.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952750.797533845] [motor_voltage_logger]: 319.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952752.691890139] [motor_voltage_logger]: 320.06s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952753.698559555] [motor_voltage_logger]: 321.06s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952754.688844225] [motor_voltage_logger]: 322.05s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952755.644081027] [motor_voltage_logger]: 323.01s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952756.656596850] [motor_voltage_logger]: 324.00s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952757.676267594] [motor_voltage_logger]: 325.04s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952758.696967390] [motor_voltage_logger]: 326.05s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952759.692203039] [motor_voltage_logger]: 327.05s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952760.684800261] [motor_voltage_logger]: 328.05s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952761.692175493] [motor_voltage_logger]: 329.05s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952762.661018312] [motor_voltage_logger]: 330.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952763.701496259] [motor_voltage_logger]: 331.05s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952764.688424038] [motor_voltage_logger]: 332.05s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952765.692297321] [motor_voltage_logger]: 333.04s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952766.686312505] [motor_voltage_logger]: 334.00s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952767.958938712] [motor_voltage_logger]: 335.02s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952768.694165159] [motor_voltage_logger]: 336.05s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952769.649388330] [motor_voltage_logger]: 337.00s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952770.649072373] [motor_voltage_logger]: 338.00s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952771.651423701] [motor_voltage_logger]: 339.01s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952772.642370456] [motor_voltage_logger]: 340.00s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952773.668676191] [motor_voltage_logger]: 341.01s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952774.647240097] [motor_voltage_logger]: 342.00s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952775.692284709] [motor_voltage_logger]: 343.05s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952776.690623607] [motor_voltage_logger]: 344.05s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[logger-1] [INFO] [1794952777.647189707] [motor_voltage_logger]: 345.01s |    0.000    0.000    0.000    0.000 V | LATCHED_STOP | HARDWARE
+[driver-3] 2026-11-18 00:59:40,654 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952780.670008801] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952780.685029100] [motor_voltage_logger]: 348.04s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 00:59:41,154 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 00:59:43,672 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952783.684001474] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952783.694329350] [motor_voltage_logger]: 351.06s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 00:59:45,167 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 00:59:47,680 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952787.695022346] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952787.706567905] [motor_voltage_logger]: 354.07s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 00:59:48,180 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 00:59:50,697 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952790.711696692] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952790.723463670] [motor_voltage_logger]: 357.09s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 00:59:51,197 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 00:59:53,714 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952793.725711196] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952793.736964670] [motor_voltage_logger]: 360.11s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 00:59:54,213 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 00:59:56,730 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952796.744795468] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952796.757353946] [motor_voltage_logger]: 363.12s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 00:59:57,227 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 00:59:59,748 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952799.761833331] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952799.771621319] [motor_voltage_logger]: 366.14s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:00:00,248 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:00:02,763 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952802.774041977] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952802.784796466] [motor_voltage_logger]: 369.15s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:00:03,263 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:00:05,777 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952805.792267730] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952805.807799457] [motor_voltage_logger]: 372.17s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:00:06,276 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:00:08,795 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952808.807835702] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952808.818527290] [motor_voltage_logger]: 375.19s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:00:09,295 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:00:11,810 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952811.821769329] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952811.830818482] [motor_voltage_logger]: 378.20s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:00:12,310 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:00:14,824 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952814.834281718] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952814.843984137] [motor_voltage_logger]: 381.21s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:00:15,328 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:00:18,957 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952818.968495334] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952818.977837929] [motor_voltage_logger]: 384.23s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:00:19,457 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:00:21,971 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952821.982599220] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952821.991782849] [motor_voltage_logger]: 387.24s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:00:22,470 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:00:24,984 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952824.994982060] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952825.003828647] [motor_voltage_logger]: 390.25s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:00:25,485 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:00:27,997 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952828.009450550] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952828.018342903] [motor_voltage_logger]: 393.27s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:00:28,497 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:00:31,011 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952831.021281450] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952831.030079447] [motor_voltage_logger]: 396.28s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:00:31,511 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:00:34,023 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952834.032328427] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952834.040953985] [motor_voltage_logger]: 399.29s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:00:34,523 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:00:37,034 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952837.046371124] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952837.062403221] [motor_voltage_logger]: 402.30s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:00:37,534 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:00:40,048 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952840.060504356] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952840.071070481] [motor_voltage_logger]: 405.32s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:00:40,548 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:00:43,063 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952843.072525030] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952843.082734350] [motor_voltage_logger]: 408.33s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:00:43,563 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:00:46,074 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952846.088764924] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952846.101537998] [motor_voltage_logger]: 411.35s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:00:46,574 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:00:49,092 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952849.105497300] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952849.117711987] [motor_voltage_logger]: 414.36s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:00:49,591 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:00:53,175 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952853.187328858] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952853.200150037] [motor_voltage_logger]: 417.38s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:00:53,675 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:00:56,189 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952856.204522030] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952856.218356356] [motor_voltage_logger]: 420.40s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:00:56,689 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:00:59,207 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952859.222279010] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952859.233183300] [motor_voltage_logger]: 423.41s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:00:59,707 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:01:02,224 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952862.237387313] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952862.248881345] [motor_voltage_logger]: 426.43s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:01:02,724 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:01:05,240 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952865.256311247] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952865.271116164] [motor_voltage_logger]: 429.45s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:01:05,740 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:01:08,261 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952868.280176730] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952868.296063742] [motor_voltage_logger]: 432.47s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:01:08,761 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:01:11,284 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952871.296658475] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952871.307016836] [motor_voltage_logger]: 435.49s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:01:11,784 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:01:14,299 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952874.312115318] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952874.322294829] [motor_voltage_logger]: 438.50s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:01:14,799 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:01:17,314 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952877.325260013] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952877.334777152] [motor_voltage_logger]: 441.52s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:01:17,814 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:01:20,327 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952880.339070856] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952880.348535752] [motor_voltage_logger]: 444.53s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:01:20,827 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:01:23,340 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952883.351012275] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952883.360313837] [motor_voltage_logger]: 447.54s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:01:23,841 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:01:27,504 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952887.515990123] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952887.524945886] [motor_voltage_logger]: 450.56s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:01:28,004 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:01:30,518 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952890.528909793] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952890.538743050] [motor_voltage_logger]: 453.57s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:01:31,018 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:01:33,531 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952893.540822032] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952893.549282392] [motor_voltage_logger]: 456.58s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:01:34,031 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:01:36,542 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952896.554618192] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952896.564357632] [motor_voltage_logger]: 459.59s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:01:37,042 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:01:39,557 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952899.567003180] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952899.576935781] [motor_voltage_logger]: 462.61s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:01:40,057 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:01:42,568 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952902.576842447] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952902.585967186] [motor_voltage_logger]: 465.62s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:01:43,068 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:01:45,579 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952905.590606920] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952905.599818498] [motor_voltage_logger]: 468.63s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:01:46,079 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:01:48,592 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952908.604089442] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952908.613188612] [motor_voltage_logger]: 471.64s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:01:49,092 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:01:51,606 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952911.618763454] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952911.630346753] [motor_voltage_logger]: 474.66s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:01:52,106 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:01:54,620 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952914.633709165] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952914.645860650] [motor_voltage_logger]: 477.67s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:01:55,120 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:01:58,758 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952918.773488553] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952918.786555205] [motor_voltage_logger]: 480.69s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:01:59,259 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:02:01,775 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952921.789949432] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952921.801659389] [motor_voltage_logger]: 483.71s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:02:02,275 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:02:04,792 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952924.803424773] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952924.818564794] [motor_voltage_logger]: 486.72s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:02:05,292 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:02:07,805 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952927.828854538] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952927.842225298] [motor_voltage_logger]: 489.75s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:02:08,305 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:02:10,832 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952930.853338198] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952930.877902005] [motor_voltage_logger]: 492.77s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:02:11,332 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:02:13,857 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952933.871887575] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952933.888596581] [motor_voltage_logger]: 495.79s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:02:14,356 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:02:16,874 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952936.887068588] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952936.896940178] [motor_voltage_logger]: 498.80s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:02:17,374 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:02:19,890 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952939.904462800] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952939.915198539] [motor_voltage_logger]: 501.82s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:02:20,390 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:02:22,907 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952942.918269361] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952942.928661339] [motor_voltage_logger]: 504.84s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:02:23,407 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:02:25,920 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952945.932579353] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952945.943507207] [motor_voltage_logger]: 507.85s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:02:26,420 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:02:28,934 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952948.947378759] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952948.958241214] [motor_voltage_logger]: 510.86s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:02:29,434 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:02:33,092 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952953.105879417] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952953.126107564] [motor_voltage_logger]: 513.88s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:02:33,592 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:02:36,112 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952956.128054540] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952956.141757068] [motor_voltage_logger]: 516.90s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:02:36,608 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:02:39,130 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952959.140282092] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952959.152100981] [motor_voltage_logger]: 519.91s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:02:39,630 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:02:42,142 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952962.154317801] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952962.167408880] [motor_voltage_logger]: 522.93s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:02:42,642 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:02:45,157 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952965.168404196] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952965.177624961] [motor_voltage_logger]: 525.94s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:02:45,657 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:02:48,170 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952968.188685573] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952968.200805282] [motor_voltage_logger]: 528.96s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:02:48,670 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:02:51,192 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952971.203407889] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952971.214555374] [motor_voltage_logger]: 531.98s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:02:51,692 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:02:54,205 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952974.220991172] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952974.236703103] [motor_voltage_logger]: 535.00s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:02:54,705 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:02:57,224 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952977.234759396] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952977.244539951] [motor_voltage_logger]: 538.01s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:02:57,724 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:03:00,236 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952980.246964388] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952980.256088234] [motor_voltage_logger]: 541.02s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:03:00,736 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:03:03,248 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952983.261820380] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952983.275076911] [motor_voltage_logger]: 544.04s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:03:03,748 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:03:07,417 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952987.430195763] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952987.442307855] [motor_voltage_logger]: 547.05s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:03:07,916 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:03:10,433 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952990.444559192] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952990.454011528] [motor_voltage_logger]: 550.07s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:03:10,933 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:03:13,446 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952993.457261681] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952993.466576495] [motor_voltage_logger]: 553.08s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:03:13,947 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:03:16,459 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952996.471008376] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952996.480212639] [motor_voltage_logger]: 556.09s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:03:16,959 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:03:19,473 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794952999.482994492] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794952999.492167508] [motor_voltage_logger]: 559.10s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:03:19,973 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:03:22,485 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794953002.497796884] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794953002.507606751] [motor_voltage_logger]: 562.12s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:03:22,985 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:03:25,500 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794953005.510668727] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794953005.519635132] [motor_voltage_logger]: 565.13s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:03:26,000 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:03:28,513 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794953008.528874295] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794953008.542319357] [motor_voltage_logger]: 568.15s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:03:29,012 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:03:31,531 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794953011.542727862] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794953011.552667995] [motor_voltage_logger]: 571.16s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:03:32,031 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:03:34,546 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794953014.558940366] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794953014.569266986] [motor_voltage_logger]: 574.18s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:03:35,046 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:03:37,561 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794953018.724885628] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794953018.738848211] [motor_voltage_logger]: 577.20s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:03:39,209 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:03:41,727 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794953021.737679568] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794953021.747542753] [motor_voltage_logger]: 580.21s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:03:42,227 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:03:44,740 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794953024.751635991] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794953024.762649551] [motor_voltage_logger]: 583.23s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:03:45,240 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:03:47,754 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794953027.764632786] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794953027.777241696] [motor_voltage_logger]: 586.24s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:03:48,254 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:03:50,767 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794953030.787471272] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794953030.801775073] [motor_voltage_logger]: 589.26s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:03:51,267 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:03:53,790 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794953033.800577297] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794953033.811565224] [motor_voltage_logger]: 592.27s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:03:54,290 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:03:56,802 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794953036.841682632] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794953036.888809260] [motor_voltage_logger]: 595.32s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:03:57,302 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:03:59,847 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794953039.865764098] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794953039.884314323] [motor_voltage_logger]: 598.34s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:04:00,347 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:04:02,868 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] [WARN] [1794953042.881433459] [robomaster_driver]: Chassis command acknowledgement missing; chassis remains disarmed and mission is inhibited.
+[logger-1] [INFO] [1794953042.896237160] [motor_voltage_logger]: 601.36s |    0.000    0.000    0.000    0.000 V | DISARMED_NO_ACK | HARDWARE
+[driver-3] 2026-11-18 01:04:03,368 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [logger-1]: process has finished cleanly [pid 685]
+[INFO] [planner-2]: process has finished cleanly [pid 686]
+[driver-3] 2026-11-18 01:04:06,383 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:04:06,625 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[driver-3] 2026-11-18 01:04:07,125 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0306, cmdset:0x3f, cmdid:0x20 timeout!
+[ERROR] [driver-3]: process[driver-3] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[INFO] [driver-3]: sending signal 'SIGTERM' to process[driver-3]
+[driver-3] 2026-11-18 01:04:10,818 ERROR client.py:163 Client: send_sync_msg wait msg receiver:0900, cmdset:0x48, cmdid:0x04 timeout!

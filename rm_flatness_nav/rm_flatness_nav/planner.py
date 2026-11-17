@@ -9,7 +9,8 @@ from .core import Observation, Supervisor, evaluate, flatness_inverse
 class Planner(Node):
     def __init__(self):
         super().__init__('flatness_planner')
-        self.control = Supervisor()
+        self.declare_parameter('initial_sweep_s', 0.0)
+        self.control = Supervisor(self.get_parameter('initial_sweep_s').value)
         self.tag = None
         self.sensors = None
         self.sensor_received = -1e9
