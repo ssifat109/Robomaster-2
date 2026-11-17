@@ -1,36 +1,36 @@
-\subsection{Hardware run and submitted evidence}
-The completed hardware run started at a camera estimated Tag 3 range of approximately $1.53\,\mathrm{m}$. The robot pursued Tag 3 and stopped at an estimated range of approximately $0.24\,\mathrm{m}$. This is close to the requested $0.20\,\mathrm{m}$ standoff, though about $4\,\mathrm{cm}$ beyond the nominal guard. The log records terminal state \texttt{STOPPED\_SHORT}; therefore the run is reported as a successful approach and stop, not as an exact 20 cm arrival. The ToF interface returned zero on all channels, so stopping used the camera range estimate.
+\subsection{Hardware runs and submitted evidence}
+Two run folders are included. Run 1 starts at a camera estimated Tag 3 range of approximately $1.53\,\mathrm{m}$ and records a final range of approximately $0.24\,\mathrm{m}$. The planner terminal state is \texttt{STOPPED\_SHORT}, about $4\,\mathrm{cm}$ outside the nominal $0.20\,\mathrm{m}$ guard. Run 2 starts at approximately $1.58\,\mathrm{m}$ and reaches a recorded minimum of $0.296\,\mathrm{m}$ during \texttt{CHASING}. Its log later shows target loss and does not record \texttt{ARRIVED}. The student reports that the phone video shows the robot stop in front of Tag 3; that phone video should accompany the submission. ToF returned zero on all channels, so both controllers relied on camera range.
 
 \begin{table}[ht]
 \centering
-\caption{Summary of available hardware evidence.}
+\caption{Summary of the two saved hardware runs.}
 \begin{tabular}{ll}
 \toprule
 Evidence & Recorded result \\
 \midrule
-Start range & approximately $1.53\,\mathrm{m}$ \\
-Final camera range & approximately $0.24\,\mathrm{m}$ \\
-Terminal planner state & \texttt{STOPPED\_SHORT} \\
-Peak commanded speed & see attached execution CSV \\
+Run 1 start / minimum range & $1.53 / 0.24\,\mathrm{m}$ \\
+Run 1 terminal state & \texttt{STOPPED\_SHORT} \\
+Run 2 start / minimum range & $1.58 / 0.296\,\mathrm{m}$ \\
+Run 2 final logged state & \texttt{DISARMED\_NO\_ACK} after target loss \\
 ToF & unavailable (zero readings) \\
 Voltage basis & model estimates from wheel commands \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-The second screen recording was supplied by the student as evidence for the additional run. The sampled panel view shows the robot camera and mission state; screen recording alone does not provide a CSV range trace. The student reports that the phone video shows the robot stopping in front of Tag 3. The phone video should accompany this report in the final course submission. The second telemetry files, where available, are included separately and should not be merged with the first run.
+The second camera video and telemetry are in the Run 2 folder. The supplied screen recording shows a panel view during the session. The student reports that the phone video shows the robot stopping in front of Tag 3; because that phone video was not available among the report files, the final stop distance for Run 2 cannot be confirmed from the phone footage here. The two CSV data sets remain separate.
 
-For the available pursuit telemetry, position progress is computed from camera range as $d_0-d(t)$ rather than independent Cartesian odometry. The run 2 attempt's range progress error has RMSE $0.0216\,\mathrm{m}$ and maximum absolute value $0.0410\,\mathrm{m}$. Its velocity error has RMSE $0.3781\,\mathrm{m/s}$ and maximum absolute value $0.4841\,\mathrm{m/s}$; this compares the cubic reference with SDK chassis velocity and shows substantial mismatch. These values are diagnostic rather than proof of tight tracking.
+For Run 2, position progress is computed from camera range as $d_0-d(t)$ rather than independent Cartesian odometry. Over the logged \texttt{CHASING} samples, range progress error has RMSE $0.0231\,\mathrm{m}$ and maximum absolute value $0.1368\,\mathrm{m}$. Velocity error has RMSE $0.0538\,\mathrm{m/s}$ and maximum absolute value $0.1526\,\mathrm{m/s}$, comparing the cubic reference with SDK chassis velocity.
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=0.88\linewidth]{../data/hardware_20261118_005335_906237/attempt_01/analysis/references.png}
-\caption{Recorded reference and response. Position response uses camera range derived progress.}
+\includegraphics[width=0.88\linewidth]{../data/hardware_20261118_011556_504834/attempt_01/analysis/references.png}
+\caption{Run 2 reference and response. Position response uses camera range derived progress.}
 \end{figure}
 \begin{figure}[ht]
 \centering
-\includegraphics[width=0.88\linewidth]{../data/hardware_20261118_005335_906237/attempt_01/analysis/tracking_errors.png}
-\caption{Reference minus response for the recorded attempt.}
+\includegraphics[width=0.88\linewidth]{../data/hardware_20261118_011556_504834/attempt_01/analysis/tracking_errors.png}
+\caption{Run 2 reference minus response.}
 \end{figure}
 
 \begin{longtable}{@{}rrrrrl@{}}
